@@ -1,0 +1,32 @@
+{
+  "name": "toma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+   "engines": {
+    "node": "5.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smilysyndrella/movieapp.git"
+  },
+  "author": "baymax",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smilysyndrella/movieapp/issues"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  
+  "homepage": "https://github.com/smilysyndrella/movieapp#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
