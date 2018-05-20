@@ -5,7 +5,7 @@ import axios from "axios";
 import "./login.css";
 import { push } from "react-router-redux";
 
-export default class Signup extends React.Component {
+class Signup extends React.Component {
   constructor() {
     super();
 
@@ -108,3 +108,5 @@ export default class Signup extends React.Component {
     );
   }
 }
+
+export default Signup;
