@@ -38,6 +38,7 @@ exports.signup = function(req, res, next) {
   // check wheather email id exists in db
   User.findOne({ email: email }, function(err, existingUser) {
     if (err) {
+      res.status(422).send({ error: "username already in use" });
       return next(err);
     }
 
@@ -53,6 +54,7 @@ exports.signup = function(req, res, next) {
     // save user
     user.save(function(err) {
       if (err) {
+        res.status(422).send({ error: "username already in use" });
         return next(err);
       }
       return res.json({ token: tokenForUser(user), user: user });
